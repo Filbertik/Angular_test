@@ -4,16 +4,16 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-test',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule], // add module
   templateUrl: './test.html',
-  styleUrls: ['./test.scss'], //  styleUrls
+  styleUrls: ['./test.scss'], //  styleUrls adds
 })
 export class Test {
   title = 'Це інтерполяція !';
   firstName = 'Viktor';
   lastName = 'Kukharskyi';
 
-  isEnabled: boolean = false; //switch of button
+  isEnabled: boolean = true; //switch of button
   isActive: boolean = false;
   isDisabled: boolean = true;
 
