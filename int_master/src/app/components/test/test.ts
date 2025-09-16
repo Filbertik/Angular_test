@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-test',
   standalone: true,
-  imports: [CommonModule], // add module
+  imports: [CommonModule, FormsModule], // add module   add forms
   templateUrl: './test.html',
   styleUrls: ['./test.scss'], //  styleUrls adds
 })
@@ -17,8 +18,27 @@ export class Test {
   isActive: boolean = false;
   isDisabled: boolean = true;
 
+  isClickedState: boolean = false;
+
+  inputText: string = ``;
+
+  //======================
+  @Input() childMessage: string = '';
+  // childMessage = input<string>('');
+  @Output() messageFromChild = new EventEmitter<string>();
+
+  //======================
+
   getFullName() {
     return `I'm ${this.firstName} ${this.lastName}`;
+  }
+
+  toggleState() {
+    this.isClickedState = true;
+  }
+
+  sendMessageToParent() {
+    this.messageFromChild.emit('Я твій син!');
   }
 }
 

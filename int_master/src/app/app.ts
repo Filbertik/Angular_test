@@ -10,4 +10,7 @@ import { Test } from './components/test/test';
 })
 export class App {
   protected readonly title = signal('int_master');
+  messageFromParent = 'Я твій батько';
+  // messageFromChild?: string; // 👈 додав
+  messageFromChild = '';
 }
