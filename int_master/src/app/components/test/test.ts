@@ -2,11 +2,12 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HighlightDirective } from '../directives/highlight';
+import { TrancatePipe } from '../../pipes/trancate-pipe';
 
 @Component({
   selector: 'app-test',
   standalone: true,
-  imports: [CommonModule, FormsModule, HighlightDirective], // add module   add forms
+  imports: [CommonModule, FormsModule, HighlightDirective, TrancatePipe], // add module   add forms
   templateUrl: './test.html',
   styleUrls: ['./test.scss'], //  styleUrls adds
 })

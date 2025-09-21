@@ -21,4 +21,6 @@
   <!-- <p>{{ childMessage }}</p>
   <button (click)="sendMessageToParent()">Go Send mail to parent</button> -->
   <p appHighlight [highliteColor]="'blue'">наведи курсор</p>
+
+  <p>{{ 'Довгий текст щшо  потребує обрізаня' | trancate : 18 }}</p>
 </div>
