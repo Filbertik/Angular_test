@@ -23,6 +23,8 @@ export class Test {
 
   inputText: string = ``;
 
+  today = new Date();
+
   //======================
   @Input() childMessage: string = '';
   // childMessage = input<string>('');
