@@ -9,6 +9,7 @@ import { PageNotFound } from './components/page-not-found/page-not-found';
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: Home },
+  { path: 'angular', component: Angular },
 ];
 
 // import { Routes } from '@angular/router';
