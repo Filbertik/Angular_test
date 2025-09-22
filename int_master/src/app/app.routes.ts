@@ -13,6 +13,7 @@ export const routes: Routes = [
   { path: 'typescript', component: Typescript },
   { path: 'javascript', component: Javascript },
   { path: 'rxjx', component: Rxjx },
+  { path: '**', component: PageNotFound },
 ];
 
 // import { Routes } from '@angular/router';
