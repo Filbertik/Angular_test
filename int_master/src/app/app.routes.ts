@@ -11,6 +11,7 @@ export const routes: Routes = [
   { path: 'home', component: Home },
   { path: 'angular', component: Angular },
   { path: 'typescript', component: Typescript },
+  { path: 'javascript', component: Javascript },
 ];
 
 // import { Routes } from '@angular/router';
