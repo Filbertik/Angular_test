@@ -10,6 +10,7 @@ export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: Home },
   { path: 'angular', component: Angular },
+  { path: 'typescript', component: Typescript },
 ];
 
 // import { Routes } from '@angular/router';
