@@ -1,1 +1,18 @@
 <p>angular works!</p>
+
+<ul>
+  @for (question of questions(); track questions.number){
+  <li>
+    <p>
+      <strong>Question {{ question.number }}:</strong> {{ question.question }}
+      {{{question.difficulty}}}
+    </p>
+  </li>
+  }
+</ul>
+
+<div #hoverArea class="hover-area">Hover over to load component</div>
+
+@defer (on hover(hoverArea)) {
+<app-test></app-test>
+}
